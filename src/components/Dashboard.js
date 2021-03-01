@@ -1,5 +1,6 @@
 import React from 'react';
 import './Dashboard.css';
+import { Link } from 'react-router-dom';
 
 function Dashboard() {
     return (
@@ -7,7 +8,10 @@ function Dashboard() {
             <h2>Emoji Critic — всё об эмодзи</h2>
             <p>
                 #1 среди авторов обзоров на эмодзи в этом году!
-      </p>
+            </p>
+            <Link to="/reviews">
+                Нажмите, чтобы увидеть самые свежие ревью!
+            </Link>
         </div>
     )
 }
