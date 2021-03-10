@@ -4,7 +4,8 @@ import Dashboard from './Dashboard';
 import Header from './Header';
 import Reviews from './Reviews';
 import AboutMe from './about-me/AboutMe';
-import AboutUs from './AboutUs';
+import AboutUs from './about-us/AboutUs';
+import PageNotFound from './PageNotFound';
 
 import { Route, Switch } from 'react-router-dom';
 
@@ -24,6 +25,9 @@ function App() {
         </Route>
         <Route path="/about-us">
           <AboutUs />
+        </Route>
+        <Route path="*">
+          <PageNotFound />
         </Route>
       </Switch>
     </div>
